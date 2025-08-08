@@ -9,14 +9,26 @@ body{
     display: flex;    
     flex-direction: column;
 }
+.menu-beauty {
+    display: flex;
+    justify-content: space-between; /* Menú a la izq, usuario a la der */
+    align-items: center;
+    padding: 0 20px;
+}
 .menu-beauty-list{
+    display: flex;
     color: white;
     list-style: none;
-    display: flex;
     gap: 20px;
 }
-.menu-beauty-list a{
+.user-profile{
     color: #FFD700;
+    list-style: none;
+}
+.menu-beauty a{
+    color: #FFD700;
+    text-decoration: none;
+    padding: 20px;
 }
 .img-central{
     display: flex;
