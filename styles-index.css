@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    margin: 0;
+    height: 100%;
+    color: white;
+}
+
+.container-beauty{
+    display: flex;    
+    flex-direction: column;
+}
+.menu-beauty-list{
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.img-central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction-message{
+    margin: 20px;
+    font-family: 'Siren Script Pro';
+    color:#FFD700;
+    font-size: 50px;
+    text-align: center;
+}
