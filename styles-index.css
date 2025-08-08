@@ -15,6 +15,9 @@ body{
     display: flex;
     gap: 20px;
 }
+.menu-beauty-list a{
+    color: #FFD700;
+}
 .img-central{
     display: flex;
     justify-content: center;
