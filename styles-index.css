@@ -28,7 +28,6 @@ body{
 .menu-beauty a{
     color: #FFD700;
     text-decoration: none;
-    padding: 20px;
 }
 .img-central{
     display: flex;
@@ -43,3 +42,25 @@ body{
     font-size: 50px;
     text-align: center;
 }
+
+#logoBS {
+    width: 200px;
+    position: absolute;
+    animation: intro 3s ease-in-out forwards;
+  }
+
+  @keyframes intro {
+    0% {
+      transform: translate(-50%, -50%) scale(2) rotate(0deg);
+      top: 50%;
+      left: 50%;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(2) rotate(360deg);
+    }
+    100% {
+      transform: translate(0, 0) scale(0.6) rotate(360deg);
+      top: 20px;
+      left: 20px;
+    }
+  }
