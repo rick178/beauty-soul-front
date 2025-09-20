@@ -31,6 +31,14 @@ body{
     color: #FFD700;
     text-decoration: none;
 }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-size: 2rem;
+  cursor: pointer;
+}
 .img-central{
     display: flex;
     justify-content: center;
@@ -84,20 +92,24 @@ body{
 
 /*RESPONSIVE*/
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* se muestra */
+  }
   .branding-container {
-    flex-direction: column; /* logo y texto uno arriba de otro */
+    /* flex-direction: column; logo y texto uno arriba de otro */
     align-items: center;
+    justify-content: center;
     height: auto;
   }
 
   #logo-bs {
     width: 120px; /* más chico */
-    animation: none; /* puedes quitar animación en mobile si estorba */
+    /* animation: none; puedes quitar animación en mobile si estorba */
   }
 
   #beauty-text-img {
-    max-width: 150px;
-    margin-top: 10px;
+    max-width: 120px;
+    /* margin-top: 10px; */
   }
 
   .menu-beauty {
