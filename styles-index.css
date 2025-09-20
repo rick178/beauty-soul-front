@@ -81,3 +81,35 @@ body{
     transform: translate(0, 0) scale(0.6) rotate(360deg) skew(0deg, 0deg);
   }
 }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .branding-container {
+    flex-direction: column; /* logo y texto uno arriba de otro */
+    align-items: center;
+    height: auto;
+  }
+
+  #logo-bs {
+    width: 120px; /* más chico */
+    animation: none; /* puedes quitar animación en mobile si estorba */
+  }
+
+  #beauty-text-img {
+    max-width: 150px;
+    margin-top: 10px;
+  }
+
+  .menu-beauty {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-beauty-list,
+  .user-profile {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
