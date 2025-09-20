@@ -5,9 +5,9 @@ body{
     color: white;
 }
 
-.container-beauty{
+.branding-container{
     display: flex;    
-    flex-direction: column;
+    align-items: center;
 }
 .menu-beauty {
     display: flex;
@@ -22,8 +22,10 @@ body{
     gap: 20px;
 }
 .user-profile{
+  display: flex;
     color: #FFD700;
     list-style: none;
+    gap: 20px;
 }
 .menu-beauty a{
     color: #FFD700;
@@ -43,24 +45,39 @@ body{
     text-align: center;
 }
 
-#logoBS {
-    width: 200px;
-    position: absolute;
-    animation: intro 3s ease-in-out forwards;
-  }
+#beauty-text-img{
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
 
-  @keyframes intro {
-    0% {
-      transform: translate(-50%, -50%) scale(2) rotate(0deg);
-      top: 50%;
-      left: 50%;
-    }
-    70% {
-      transform: translate(-50%, -50%) scale(2) rotate(360deg);
-    }
-    100% {
-      transform: translate(0, 0) scale(0.6) rotate(360deg);
-      top: 20px;
-      left: 20px;
-    }
+.branding-container{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+} 
+
+#logo-bs {
+    width: 200px;
+    /* position: absolute; */
+    animation: intro 3s ease-in-out forwards;
+}
+
+ @keyframes intro {
+  0% {
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%)) scale(2) rotate(0deg) skew(45deg, 10deg);
   }
+  70% {
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%)) scale(2) rotate(360deg) skew(-20deg, -5deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.6) rotate(360deg) skew(0deg, 0deg);
+  }
+}

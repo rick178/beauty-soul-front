@@ -1,0 +1,150 @@
+/* .box1{
+    width: 500px;
+    height: 400px;
+    background-color: gray;
+    position: relative;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+} */
+
+/* .box3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: red;
+} */
+
+ /* .container {
+  width: 400px;
+  height: 300px;
+  background-color: lightgray;
+  position: relative;
+
+}
+
+.box-red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}  */
+/* 
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: orange;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.content {
+  height: 2000px; 
+} */
+
+body{
+    margin: 100px;
+}
+
+.header-fixed{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    background-color: red
+}
+
+/* .box-relative{
+    position: relative;
+    background-color: yellow;
+    width: 400px;
+    height: 400px;
+}
+.box-absolute{
+    position: absolute;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.sticky-text{
+  position: sticky;
+  top: 0;
+  background: green;
+  color: white;
+}
+.sticky-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 2px solid gray;
+  padding: 10px;
+} */
+
+/* .nav-flex-pos{
+    display: flex;
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+}
+.img-header{
+    width: 80px;
+    height: 80px;
+}
+.links a{
+    color: white;
+}
+.button-article{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: green;
+    color: white;
+}
+.main-flex-pos{
+    max-height: 300px;
+    top: 0;
+    overflow-y: auto;
+    border: 2px solid gray;
+    padding: 10px;
+} */
+
+.header-container{
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+.aside-menu{
+    flex: 0 0 30%;
+    position: sticky;
+    top: 0;
+
+}
+
+.main-container{
+    flex: 0 0 70%;
+}
