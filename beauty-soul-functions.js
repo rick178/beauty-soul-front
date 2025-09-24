@@ -6,9 +6,9 @@
 //     alert("Menu Hamburguesa");
 // }) 
 
-const toggle = document.getElementById("menu-toggle");
-const menu = document.querySelector(".menu-beauty");
+// const toggle = document.getElementById("menu-toggle");
+// const menu = document.querySelector(".menu-beauty");
 
-toggle.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
+// toggle.addEventListener("click", () => {
+//   menu.classList.toggle("active");
+// });

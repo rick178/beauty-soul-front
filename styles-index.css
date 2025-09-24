@@ -110,8 +110,9 @@ body{
 
 #beauty-footer{
   display: flex;
-  justify-content: end;
-  padding-left: 300px;
+  justify-content: center;
+  padding-top: 100px;
+  /* padding-left: 300px; */
 }
 
 
