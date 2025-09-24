@@ -9,17 +9,26 @@
     <script src="beauty-soul-functions.js" defer>
         
     </script>
-</head>
+</head> 
 <body>
     
     <div class="container-beauty">
         
-        <header>
+        <header class="beauty-header">
             <div class="branding-container">            
-                <button class="menu-toggle" id="menu-toggle">☰</button>    
-                <img src="img/logo-bs-nobg.png" alt="imagen central" id="logo-bs">           
-                <img src="img/BeatySoulText.jpg" alt="BeatySoulText" id="beauty-text-img">            
+                <!-- <button class="menu-toggle" id="menu-toggle">☰</button>     -->
+                <img src="img/logo-bs-nobg.png" alt="logo bs" id="logo-bs">           
+                <img src="img/BeatySoulText.jpg" alt="letras bs" id="beauty-text-img">            
             </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+            <!-- label que actúa como botón hamburguesa -->
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav class="menu-beauty">
                 
                 <ul class="menu-beauty-list">
@@ -28,23 +37,22 @@
                     <li><a href="#">Citas</a></li>
                     <li><a href="#">Contáctanos</a></li>
                 </ul>
-                        <ul class="user-profile">
+                <ul class="user-profile">
                     <a href="#">Iniciar sesión</a>
                     <a href="#">Registrarse</a>
-                </ul>
-                
+                </ul>                
             </nav>
         </header>
         
         <main>
             <h1 class="construction-message">
                 Beauty Soul en construcción
-            </h1>
-                 
+            </h1>                 
         </main>
-         <footer id="beaty-footer">
+        <footer id="beauty-footer">
             <p>&copy; 2025 Beauty Soul. Todos los derechos reservados.</p>
-         </footer>
+        </footer>
+        <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
     </div>
 </body>
 </html>
