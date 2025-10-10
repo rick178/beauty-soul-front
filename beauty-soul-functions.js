@@ -28,6 +28,19 @@ logoBS.addEventListener("webkitAnimationEnd", () => {
         sliderBS.style.opacity = 1; 
 });
 
+const links = document.querySelectorAll('.menu-beauty-list a');
+const sections = document.querySelectorAll('.section');
+links.forEach(link =>{console.log(link.textContent)})
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = link.textContent.trim().toLowerCase(); // ejemplo: "Inicio" → "inicio"
+
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(target).classList.add('active');
+  });
+});
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     const sliderBS = document.querySelector(".beautysoul-slider");
 

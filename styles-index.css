@@ -113,12 +113,13 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  color: #FFD700;
   /* padding-left: 300px; */
 }
 .beautysoul-slider {
   display: none;
   opacity: 0;
-   transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   max-width: 900px;
   margin: 40px auto;
   border-radius: 10px;
@@ -129,6 +130,17 @@ body{
 .beautysoul-slider img {
   width: 100%;
   height: auto;
+}
+ /*Ocultar secciones*/
+ .section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+  
+.section.active {
+  display: block !important;
+  opacity: 1;
 }
 
 
@@ -194,7 +206,10 @@ body{
     pointer-events: none;
     transition: opacity 0.3s ease;
     z-index: 50;
-  }
+  } 
+.content-wrapper {
+  padding: 20px;
+}
 
   /* Cuando el checkbox está CHECKED -> mostrar menú y overlay */
   .nav-toggle:checked ~ .menu-beauty {
