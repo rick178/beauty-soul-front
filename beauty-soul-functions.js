@@ -30,6 +30,7 @@ logoBS.addEventListener("webkitAnimationEnd", () => {
 
 const links = document.querySelectorAll('.menu-beauty-list a');
 const sections = document.querySelectorAll('.section');
+const navToggle = document.querySelector('.nav-toggle');
 links.forEach(link =>{console.log(link.textContent)})
 links.forEach(link => {
   link.addEventListener('click', (e) => {
@@ -38,6 +39,10 @@ links.forEach(link => {
 
     sections.forEach(sec => sec.classList.remove('active'));
     document.getElementById(target).classList.add('active');
+
+    if (navToggle.checked) {
+      navToggle.checked = false;
+    }
   });
 });
 
