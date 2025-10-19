@@ -120,7 +120,7 @@ body{
   display: none;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  max-width: 900px;
+  max-width: 300px;
   margin: 40px auto;
   border-radius: 10px;
   overflow: hidden;
@@ -142,7 +142,18 @@ body{
   display: block !important;
   opacity: 1;
 }
-
+.galeria-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.galeria-container img {
+  width: calc(50% - 10px); /* Establece el ancho de cada foto al 50% menos el espacio */
+  height: auto; /* Mantiene la proporción de la imagen */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+  padding: 30px 100px 30px 100px;
+}
 
  @keyframes intro {
   0% {
@@ -160,6 +171,9 @@ body{
   /* Mostrar botón hamburguesa */
   .nav-toggle-label {
     display: flex;
+  }
+  .galeria-container img {
+    width: 100%; /* En pantallas pequeñas, las fotos ocupan todo el ancho */
   }
 
   /* El nav se convierte en panel fijo que sale desde la derecha */
